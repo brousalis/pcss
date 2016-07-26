@@ -1,0 +1,22 @@
+{
+  "name": "pcss",
+  "description": "low-level css framework",
+  "homepage": "https://github.com/brousalis/pcss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brousalis/pcss"
+  },
+  "main": "dist/pcss.css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "spec"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "functional",
+    "responsive"
+  ]
+}
