@@ -9,7 +9,7 @@ var cssnano = require('gulp-cssnano');
 var combinemq = require('gulp-combine-mq');
 
 gulp.task('sass', function(callback) {
-  return gulp.src('*.scss')
+  return gulp.src('./src/*.scss')
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(combinemq())
