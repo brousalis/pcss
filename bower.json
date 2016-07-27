@@ -1,6 +1,6 @@
 {
   "name": "pcss",
-  "description": "low-level css framework",
+  "description": "low-level css toolkit",
   "homepage": "https://github.com/brousalis/pcss",
   "repository": {
     "type": "git",
