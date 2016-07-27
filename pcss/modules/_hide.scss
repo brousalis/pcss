@@ -1,0 +1,20 @@
+// accessible hide
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px
+}
+
+// responsive hide
+
+@each $name, $value in $breakpoints {
+  @media (min-width: $value) {
+    .hide-#{$name} { display: none !important }
+  }
+}

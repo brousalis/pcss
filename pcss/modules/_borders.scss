@@ -1,0 +1,24 @@
+// borders
+
+$border-width:    1px !default;
+$border-style:    solid !default;
+
+.b          { border-style: $border-style; border-width: $border-width }
+.b-top      { border-top-style: $border-style; border-top-width: $border-width }
+.b-right    { border-right-style: $border-style; border-right-width: $border-width }
+.b-bottom   { border-bottom-style: $border-style; border-bottom-width: $border-width }
+.b-left     { border-left-style: $border-style; border-left-width: $border-width }
+
+.b-0        { border: 0 }
+
+// border colors
+
+@each $name, $value in $colors {
+  .b--#{$name} { border-color: $value }
+}
+
+// border styles
+
+.b--dotted  { border-style: dotted }
+.b--dashed  { border-style: dashed }
+.b--solid   { border-style: solid }

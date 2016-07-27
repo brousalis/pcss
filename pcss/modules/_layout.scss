@@ -1,0 +1,44 @@
+// layout
+
+// image replacement
+
+.ir { color: transparent; font: 0/0 a; text-shadow: none }
+
+// overflow
+
+.o-hidden { overflow: hidden }
+.o-scroll { overflow: scroll }
+.o-auto   { overflow: auto }
+
+// floats
+
+.f-none   { float: none }
+.f-left   { float: left }
+.f-right  { float: right }
+
+// responsive floats
+
+@each $name, $value in $breakpoints {
+  @media (min-width: $value) {
+    .f-none-#{$name}    { float: none }
+    .f-left-#{$name}    { float: left }
+    .f-right-#{$name}   { float: right }
+  }
+}
+
+// cursor
+
+$cursors: (
+  "default",
+  "pointer",
+  "text"
+) !default;
+
+@each $cursor in $cursors {
+  .c-#{$cursor} { cursor: #{$cursor} }
+}
+
+// pointer events
+
+.pe-none { pointer-events: none }
+.pe-auto { pointer-events: auto }

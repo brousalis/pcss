@@ -1,0 +1,6 @@
+// colors
+
+@each $name, $value in $colors {
+  .c-#{$name}   { color: $value }
+  .bg-#{$name}  { background-color: $value }
+}

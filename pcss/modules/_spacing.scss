@@ -1,0 +1,36 @@
+// margin and padding
+
+$spacing: (
+  "m": margin,
+  "p": padding
+);
+
+@each $name, $value in $spacing  {
+  @each $scale-name, $scale-value in $scale {
+    .#{$name}-#{$scale-name}   { #{$value}-bottom: $scale-value; #{$value}-top: $scale-value }
+    .#{$name}t-#{$scale-name}  { #{$value}-top: $scale-value }
+    .#{$name}b-#{$scale-name}  { #{$value}-bottom: $scale-value }
+  }
+
+  .#{$name}l     { #{$value}-left: $gutter }
+  .#{$name}l-h   { #{$value}-left: $gutter-half }
+  .#{$name}r     { #{$value}-right: $gutter }
+  .#{$name}r-h   { #{$value}-right: $gutter-half }
+  .#{$name}x     { #{$value}-left: $gutter; #{$value}-right: $gutter }
+  .#{$name}x-h   { #{$value}-left: $gutter-half; #{$value}-right: $gutter-half }
+
+  .#{$name}-0  { #{$value}: 0 }
+  .#{$name}x-0 { #{$value}-left: 0; #{$value}-right: 0 }
+  .#{$name}y-0 { #{$value}-bottom: 0; #{$value}-top: 0 }
+  .#{$name}t-0 { #{$value}-top: 0 }
+  .#{$name}r-0 { #{$value}-right: 0 }
+  .#{$name}b-0 { #{$value}-bottom: 0 }
+  .#{$name}l-0 { #{$value}-left: 0 }
+}
+
+// margin auto
+
+.m-auto   { margin: auto }
+.ml-auto  { margin-left: auto }
+.mr-auto  { margin-right: auto }
+.mx-auto  { margin-left: auto; margin-right: auto }

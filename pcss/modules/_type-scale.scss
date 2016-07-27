@@ -1,0 +1,5 @@
+// type scale
+
+@each $name, $value in $scale {
+  .s-#{$name} { font-size: $value; }
+}

@@ -1,0 +1,17 @@
+// grid
+
+$columns: 12 !default;
+
+.col { float: left; box-sizing: border-box }
+
+@for $i from 1 to $columns + 1 {
+  .col-#{$i} { width: ($i / $columns) * 100% }
+}
+
+@each $name, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @for $i from 1 to $columns + 1 {
+      .col-#{$i}-#{$name} { width: ($i / $columns) * 100% }
+    }
+  }
+}

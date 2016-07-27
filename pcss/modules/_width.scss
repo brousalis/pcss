@@ -1,0 +1,11 @@
+// widths
+
+.w-auto { width: auto }
+
+// max widths
+
+@each $name, $value in $breakpoints {
+  .mw-#{$name} { max-width: $value }
+}
+
+.mw-none { max-width: none }
