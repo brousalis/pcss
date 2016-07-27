@@ -1,8 +1,8 @@
 # 🐧  pcss
 
-> an opinionated low-level css toolkit
+> a low-level css toolkit
 
-pcss is set of immutable utilities and styles for building sites with a minimal amount of css
+pcss is a set of immutable styles and utilities, written in Sass, for building sites with a minimal amount of css. 
 
 inspired by
 * [basscss](https://basscss.com) by [Brent Jackson](https://twitter.com/jxnblk)
