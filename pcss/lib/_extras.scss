@@ -1,0 +1,20 @@
+// extras
+
+// remove gray tap highlight on safari
+
+html { -webkit-tap-highlight-color: transparent }
+
+// remove yellow chrome autofill
+
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0 500px #fff inset }
+
+// force iphone inputs to 16px to prevent zoom
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input,
+  select:focus,
+  textarea:focus,
+  input:focus { font-size: 16px }
+}
