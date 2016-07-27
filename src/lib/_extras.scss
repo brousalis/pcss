@@ -14,3 +14,7 @@ html { -webkit-tap-highlight-color: transparent }
   textarea:focus,
   input:focus { font-size: 16px }
 }
+
+// responsive img
+
+img { max-width: 100% }
