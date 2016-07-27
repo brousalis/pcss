@@ -1,11 +1,11 @@
 // displays
 
 $displays: (
-  "block",
-  "inline",
-  "inline-block",
-  "table",
-  "table-cell"
+  block,
+  inline,
+  inline-block,
+  table,
+  table-cell
 ) !default;
 
 @each $display in $displays {
