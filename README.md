@@ -2,6 +2,8 @@
 
 > an opinionated low-level css toolkit
 
+pcss is set of immutable utilities and styles for building sites with a minimal amount of css
+
 inspired by
 * [basscss](https://basscss.com) by [Brent Jackson](https://twitter.com/jxnblk)
 * [tachyons](https://tachyons.io) by [Adam Morse](https://twitter.com/mrmrs_)
@@ -22,9 +24,9 @@ include it into your sass project:
 
 or add the compiled versions from the `/dist` folder to your app
 
-##  what's the difference?
+##  naming convention
 
-it's mostly for my own use in sass projects. pcss follows this naming convention:
+pcss follows this naming convention:
 
 ```css
 .${shorthand property}-${value}
@@ -41,4 +43,4 @@ ex:
 .fw-500     // font-weight: 500
 ```
 
-> **note** there are a few exceptions, mainly spacing (margin/padding). to read more about the naming convention and see a list of classes, read the [docs]()
+> **note** there are a few exceptions, mainly spacing (margin/padding) and some utility classes (hide, nowrap, truncate). to read more about the naming convention and see a list of classes, read the [docs]()
