@@ -1,12 +1,6 @@
 // displays
 
-$displays: (
-  block,
-  inline,
-  inline-block,
-  table,
-  table-cell
-) !default;
+$displays: "block", "inline", "inline-block", "table", "table-cell" !default;
 
 @each $display in $displays {
   .d-#{$display} { display: $display }

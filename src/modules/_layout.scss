@@ -28,11 +28,7 @@
 
 // cursor
 
-$cursors: (
-  "default",
-  "pointer",
-  "text"
-) !default;
+$cursors: "default", "pointer", "text" !default;
 
 @each $cursor in $cursors {
   .c-#{$cursor} { cursor: #{$cursor} }
