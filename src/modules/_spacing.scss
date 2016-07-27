@@ -28,10 +28,10 @@ $spacing: (
   .#{$name}l0 { #{$value}-left: 0 }
 }
 
-.p    { padding: $scale-md $gutter }
-.p-h  { padding: $scale-md $gutter-half }
-.m    { margin: $scale-md $gutter }
-.m-h  { margin: $scale-md $gutter-half }
+.p    { padding: $md $gutter }
+.p-h  { padding: $md $gutter-half }
+.m    { margin: $md $gutter }
+.m-h  { margin: $md $gutter-half }
 
 // margin auto
 
