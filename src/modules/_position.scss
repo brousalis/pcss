@@ -1,0 +1,27 @@
+// position
+
+.p-relative   { position: relative }
+.p-absolute   { position: absolute }
+.p-fixed      { position: fixed }
+
+// z-index
+
+.z-100    { z-index: 100 }
+.z-500    { z-index: 500 }
+.z-1000   { z-index: 1000 }
+
+// centering
+
+.center-x { left: 50%; transform: perspective(1px) translateX(-50%) }
+.center-y { top: 50%; transform: perspective(1px) translateY(-50%) }
+.center-xy { left: 50%; top: 50%; transform: perspective(1px) translateX(-50%) translateY(-50%) }
+
+// positioning
+
+.fill   { top: 0; right: 0; bottom: 0; left: 0 }
+.fit    { max-width: 100% }
+
+.t0 { top: 0 }
+.r0 { right: 0 }
+.b0 { bottom: 0 }
+.l0 { left: 0 }

@@ -19,13 +19,13 @@ $spacing: (
   .#{$name}x     { #{$value}-left: $gutter; #{$value}-right: $gutter }
   .#{$name}x-h   { #{$value}-left: $gutter-half; #{$value}-right: $gutter-half }
 
-  .#{$name}-0  { #{$value}: 0 }
-  .#{$name}x-0 { #{$value}-left: 0; #{$value}-right: 0 }
-  .#{$name}y-0 { #{$value}-bottom: 0; #{$value}-top: 0 }
-  .#{$name}t-0 { #{$value}-top: 0 }
-  .#{$name}r-0 { #{$value}-right: 0 }
-  .#{$name}b-0 { #{$value}-bottom: 0 }
-  .#{$name}l-0 { #{$value}-left: 0 }
+  .#{$name}0  { #{$value}: 0 }
+  .#{$name}x0 { #{$value}-left: 0; #{$value}-right: 0 }
+  .#{$name}y0 { #{$value}-bottom: 0; #{$value}-top: 0 }
+  .#{$name}t0 { #{$value}-top: 0 }
+  .#{$name}r0 { #{$value}-right: 0 }
+  .#{$name}b0 { #{$value}-bottom: 0 }
+  .#{$name}l0 { #{$value}-left: 0 }
 }
 
 // margin auto
