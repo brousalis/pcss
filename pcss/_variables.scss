@@ -1,0 +1,55 @@
+// variables
+
+// scale (type, spacing)
+
+$xs: .667rem !default;
+$sm: 1rem !default;
+$md: 1.5rem !default;
+$lg: 2.25rem !default;
+$xlg: 3.375rem !default;
+
+$scale: (
+  "xs": $xs,
+  "sm": $sm,
+  "md": $md,
+  "lg": $lg,
+  "xlg": $xlg
+) !default;
+
+// breakpoints
+
+$breakpoint-sm: 544px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 1024px !default;
+
+$breakpoints: (
+  "sm": $breakpoint-sm,
+  "md": $breakpoint-md,
+  "lg": $breakpoint-lg
+) !default;
+
+// horizontal spacing
+
+$gutter: $sm !default;
+$gutter-half: $xs !default;
+
+// colors
+
+$brand:   #0074d9 !default;
+
+$black:   #111 !default;
+$white:   #fff !default;
+$light:   #f7f7f7 !default;
+$dark:    #333 !default;
+$gray:    #aaa !default;
+$silver:  #ddd !default;
+
+$colors: (
+  "brand": $brand,
+  "black": $black,
+  "white": $white,
+  "light": $light,
+  "dark": $dark,
+  "gray": $gray,
+  "silver": $silver
+) !default;
