@@ -6,7 +6,7 @@ html { -webkit-tap-highlight-color: transparent }
 
 // force iphone inputs to 16px to prevent zoom
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
+@media (max-width: 769px) {
   select,
   textarea,
   input,
