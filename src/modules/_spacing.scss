@@ -1,11 +1,6 @@
 // margin and padding
 
-$spacing: (
-  "m": margin,
-  "p": padding
-);
-
-@each $name, $value in $spacing  {
+@each $name, $value in (m: margin, p: padding)  {
   @each $scale-name, $scale-value in $scale {
     .#{$name}-#{$scale-name}   { #{$value}-bottom: $scale-value; #{$value}-top: $scale-value }
     .#{$name}t-#{$scale-name}  { #{$value}-top: $scale-value }

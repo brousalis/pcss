@@ -4,17 +4,18 @@
 
 html { -webkit-tap-highlight-color: transparent }
 
-// force iphone inputs to 16px to prevent zoom
-
-@media (max-width: 769px) {
-  select,
-  textarea,
-  input,
-  select:focus,
-  textarea:focus,
-  input:focus { font-size: 16px }
-}
-
-// responsive img
+body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif }
 
 img { max-width: 100% }
+
+// Links
+
+a {
+  background: transparent;
+  color: $brand;
+  outline: 0;
+  text-decoration: none;
+
+  &:active, &:hover { outline: 0 }
+}
+
