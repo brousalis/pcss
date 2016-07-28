@@ -17,7 +17,7 @@ $displays: (
 @each $breakpoint, $value in $breakpoints {
   @media (min-width: $value) {
     @each $name, $display in $displays {
-      .d-#{$name}-#{$breapoint} { display: $value }
+      .d-#{$name}-#{$breakpoint} { display: $value }
     }
   }
 }
