@@ -8,16 +8,16 @@ $displays: (
   tc: table-cell
 ) !default;
 
-@each $display in $displays {
-  .d-#{$display} { display: $display }
+@each $name, $display in $displays {
+  .d-#{$name} { display: $display }
 }
 
 // responsive displays
 
-@each $name, $value in $breakpoints {
+@each $breakpoint, $value in $breakpoints {
   @media (min-width: $value) {
-    @each $display in $displays {
-      .d-#{$display}-#{$name} { display: $value }
+    @each $name, $display in $displays {
+      .d-#{$name}-#{$breapoint} { display: $value }
     }
   }
 }
