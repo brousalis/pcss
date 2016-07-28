@@ -6,29 +6,29 @@
 
 // overflow
 
-.o-hidden { overflow: hidden }
-.o-scroll { overflow: scroll }
-.o-auto   { overflow: auto }
+.o-h { overflow: hidden }
+.o-s { overflow: scroll }
+.o-a { overflow: auto }
 
 // floats
 
-.f-none   { float: none }
-.f-left   { float: left }
-.f-right  { float: right }
+.f-n { float: none }
+.f-l { float: left }
+.f-r { float: right }
 
 // responsive floats
 
 @each $name, $value in $breakpoints {
   @media (min-width: $value) {
-    .f-none-#{$name}    { float: none }
-    .f-left-#{$name}    { float: left }
-    .f-right-#{$name}   { float: right }
+    .f-n-#{$name}   { float: none }
+    .f-l-#{$name}   { float: left }
+    .f-r-#{$name}   { float: right }
   }
 }
 
 // cursor
 
-$cursors: "default", "pointer", "text" !default;
+$cursors: default, pointer, text !default;
 
 @each $cursor in $cursors {
   .c-#{$cursor} { cursor: #{$cursor} }
@@ -36,5 +36,5 @@ $cursors: "default", "pointer", "text" !default;
 
 // pointer events
 
-.pe-none { pointer-events: none }
-.pe-auto { pointer-events: auto }
+.pe-n { pointer-events: none }
+.pe-a { pointer-events: auto }

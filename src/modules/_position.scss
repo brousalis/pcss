@@ -1,8 +1,8 @@
 // position
 
-.p-relative   { position: relative }
-.p-absolute   { position: absolute }
-.p-fixed      { position: fixed }
+.p-r { position: relative }
+.p-a { position: absolute }
+.p-f { position: fixed }
 
 // z-index
 
@@ -21,7 +21,7 @@
 .fill   { top: 0; right: 0; bottom: 0; left: 0 }
 .fit    { max-width: 100% }
 
-.t0 { top: 0 }
-.r0 { right: 0 }
-.b0 { bottom: 0 }
-.l0 { left: 0 }
+.t-0 { top: 0 }
+.r-0 { right: 0 }
+.b-0 { bottom: 0 }
+.l-0 { left: 0 }

@@ -2,7 +2,7 @@
 
 > a low-level css toolkit
 
-pcss is a set of immutable styles and utilities, written in Sass, for building sites with a minimal amount of css. 
+pcss is a set of immutable styles and utilities, written in Sass, for building sites with a minimal amount of css.
 
 inspired by
 * [basscss](https://basscss.com) by [Brent Jackson](https://twitter.com/jxnblk)
@@ -29,18 +29,18 @@ or add the compiled versions from the `/dist` folder to your app
 pcss follows this naming convention:
 
 ```css
-.${shorthand property}-${value}
+.${shorthand property}-${shorthand value}
 ```
 
 ex:
 
 ```sass
-.va-middle  // vertical-align: middle
-.f-left     // float: left
-.o-hidden   // overflow: hidden
-.d-block    // display: block
-.ta-left    // text-align: left
-.fw-500     // font-weight: 500
+.va-m     // vertical-align: middle
+.f-l      // float: left
+.o-h      // overflow: hidden
+.d-b      // display: block
+.ta-l     // text-align: left
+.fw-500   // font-weight: 500
 ```
 
-> **note** there are a few exceptions, mainly spacing (margin/padding) and some utility classes (hide, nowrap, truncate). to read more about the naming convention and see a list of classes, read the [docs]()
+> **note** there are a few exceptions, like some utility classes (hide, nowrap, truncate). to read more about the naming convention and see a list of classes, read the [docs]()

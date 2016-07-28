@@ -30,26 +30,34 @@ $breakpoints: (
 
 // horizontal spacing
 
-$gutter:      $sm !default;
-$gutter-half: $xs !default;
+$gutter: $sm;
 
 // colors
 
-$brand:   #0074d9 !default;
-
-$black:   #111 !default;
-$white:   #fff !default;
-$light:   #f7f7f7 !default;
-$dark:    #333 !default;
-$gray:    #aaa !default;
-$silver:  #ddd !default;
+$brand:          #0074d9 !default;
+$black:          #373a3c !default;
+$white:          #373a3c !default;
+$white-offset:   #f7f7f9 !default;
+$success:        #5cb85c !default;
+$info:           #5bc0de !default;
+$warning:        #f0ad4e !default;
+$danger:         #d9534f !default;
+$gray:           #55595c !default;
+$gray-dark:      #373a3c !default;
+$gray-light:     #818a91 !default;
+$gray-lighter:   #eceeef !default;
 
 $colors: (
-  "brand":  $brand,
-  "black":  $black,
-  "white":  $white,
-  "light":  $light,
-  "dark":   $dark,
-  "gray":   $gray,
-  "silver": $silver
+  "brand":          $brand,
+  "black":          $black,
+  "white":          $white,
+  "white-offset":   $white-offset,
+  "success":        $success,
+  "info":           $info,
+  "warning":        $warning,
+  "danger":         $danger,
+  "gray":           $gray,
+  "gray-dark":      $gray-dark,
+  "gray-light":     $gray-light,
+  "gray-lighter":   $gray-lighter,
 ) !default;

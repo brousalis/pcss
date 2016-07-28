@@ -1,6 +1,6 @@
 // widths
 
-.w-auto { width: auto }
+.w-a { width: auto }
 
 // max widths
 
@@ -8,4 +8,4 @@
   .mw-#{$name} { max-width: $value }
 }
 
-.mw-none { max-width: none }
+.mw-n { max-width: none }

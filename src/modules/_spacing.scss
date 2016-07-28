@@ -2,35 +2,29 @@
 
 @each $name, $value in (m: margin, p: padding)  {
   @each $scale-name, $scale-value in $scale {
-    .#{$name}-#{$scale-name}   { #{$value}-bottom: $scale-value; #{$value}-top: $scale-value }
-    .#{$name}t-#{$scale-name}  { #{$value}-top: $scale-value }
-    .#{$name}b-#{$scale-name}  { #{$value}-bottom: $scale-value }
+    .#{$name}-#{$scale-name}  { #{$value}-bottom: $scale-value; #{$value}-top: $scale-value }
+    .#{$name}t-#{$scale-name} { #{$value}-top: $scale-value }
+    .#{$name}b-#{$scale-name} { #{$value}-bottom: $scale-value }
   }
 
-  .#{$name}l     { #{$value}-left: $gutter }
-  .#{$name}l-h   { #{$value}-left: $gutter-half }
-  .#{$name}r     { #{$value}-right: $gutter }
-  .#{$name}r-h   { #{$value}-right: $gutter-half }
-  .#{$name}x     { #{$value}-left: $gutter; #{$value}-right: $gutter }
-  .#{$name}x-h   { #{$value}-left: $gutter-half; #{$value}-right: $gutter-half }
+  .#{$name}    { #{$value}: $md $gutter }
 
-  .#{$name}0  { #{$value}: 0 }
-  .#{$name}x0 { #{$value}-left: 0; #{$value}-right: 0 }
-  .#{$name}y0 { #{$value}-bottom: 0; #{$value}-top: 0 }
-  .#{$name}t0 { #{$value}-top: 0 }
-  .#{$name}r0 { #{$value}-right: 0 }
-  .#{$name}b0 { #{$value}-bottom: 0 }
-  .#{$name}l0 { #{$value}-left: 0 }
+  .#{$name}l   { #{$value}-left: $gutter }
+  .#{$name}r   { #{$value}-right: $gutter }
+  .#{$name}x   { #{$value}-left: $gutter; #{$value}-right: $gutter }
+
+  .#{$name}-0  { #{$value}: 0 }
+  .#{$name}x-0 { #{$value}-left: 0; #{$value}-right: 0 }
+  .#{$name}y-0 { #{$value}-bottom: 0; #{$value}-top: 0 }
+  .#{$name}t-0 { #{$value}-top: 0 }
+  .#{$name}r-0 { #{$value}-right: 0 }
+  .#{$name}b-0 { #{$value}-bottom: 0 }
+  .#{$name}l-0 { #{$value}-left: 0 }
 }
-
-.p    { padding: $md $gutter }
-.p-h  { padding: $md $gutter-half }
-.m    { margin: $md $gutter }
-.m-h  { margin: $md $gutter-half }
 
 // margin auto
 
-.m-auto   { margin: auto }
-.ml-auto  { margin-left: auto }
-.mr-auto  { margin-right: auto }
-.mx-auto  { margin-left: auto; margin-right: auto }
+.m-a  { margin: auto }
+.ml-a { margin-left: auto }
+.mr-a { margin-right: auto }
+.mx-a { margin-left: auto; margin-right: auto }
