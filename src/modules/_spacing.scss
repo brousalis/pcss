@@ -1,17 +1,29 @@
 // margin and padding
 
 @each $name, $value in (m: margin, p: padding)  {
+
+  // vertical spacing
+
   @each $scale-name, $scale-value in $scale {
-    .#{$name}-#{$scale-name}  { #{$value}-bottom: $scale-value; #{$value}-top: $scale-value }
+    .#{$name}-#{$scale-name},
+    .#{$name}y-#{$scale-name} { #{$value}-bottom: $scale-value; #{$value}-top: $scale-value }
     .#{$name}t-#{$scale-name} { #{$value}-top: $scale-value }
     .#{$name}b-#{$scale-name} { #{$value}-bottom: $scale-value }
   }
 
-  .#{$name}    { #{$value}: $md $gutter }
+  // horizontal spacing
 
-  .#{$name}l   { #{$value}-left: $gutter }
-  .#{$name}r   { #{$value}-right: $gutter }
-  .#{$name}x   { #{$value}-left: $gutter; #{$value}-right: $gutter }
+  .#{$name}l { #{$value}-left: $gutter }
+  .#{$name}r { #{$value}-right: $gutter }
+  .#{$name}x { #{$value}-left: $gutter; #{$value}-right: $gutter }
+
+  @each $gutter-name, $gutter-value in $scale {
+    .#{$name}l-#{$gutter-name} { #{$value}-left: $gutter-value }
+    .#{$name}r-#{$gutter-name} { #{$value}-right: $gutter-value }
+    .#{$name}x-#{$gutter-name} { #{$value}-left: $gutter-value; #{$value}-right: $gutter-value }
+  }
+
+  // resets
 
   .#{$name}-0  { #{$value}: 0 }
   .#{$name}x-0 { #{$value}-left: 0; #{$value}-right: 0 }

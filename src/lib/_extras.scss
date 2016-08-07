@@ -2,9 +2,11 @@
 
 * { box-sizing: border-box; outline: none }
 
-html { -webkit-tap-highlight-color: transparent }
-
-body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif }
+html {
+  color: $gray-dark;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
 
 img { max-width: 100% }
 
@@ -16,4 +18,3 @@ a {
 
   &:active, &:hover { outline: 0 }
 }
-

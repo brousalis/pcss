@@ -1,0 +1,61 @@
+// variables
+
+$xs:   .667rem !default;
+$sm:   1rem !default;
+$md:   1.5rem !default;
+$lg:   2.25rem !default;
+$xlg:  3.375rem !default;
+$xxlg: 5.063rem !default;
+
+$scale: (
+  1: $xs,
+  2: $sm,
+  3: $md,
+  4: $lg,
+  5: $xlg,
+  6: $xxlg
+) !default;
+
+// breakpoints
+
+$breakpoint-sm: 544px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 1024px !default;
+
+$breakpoints: (
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg
+) !default;
+
+// colors
+
+$brand:        #0074d9 !default;
+$black:        #000000 !default;
+$white:        #ffffff !default;
+$dark:         #373a3c !default;
+$light:        #f7f7f9 !default;
+$success:      #5cb85c !default;
+$info:         #5bc0de !default;
+$warning:      #f0ad4e !default;
+$danger:       #d9534f !default;
+$gray:         #55595c !default;
+$gray-dark:    #373a3c !default;
+$gray-light:   #818a91 !default;
+$gray-lighter: #eceeef !default;
+
+$colors: (
+  "brand":        $brand,
+  "black":        $black,
+  "white":        $white,
+  "dark":         $dark,
+  "light":        $light,
+  "success":      $success,
+  "info":         $info,
+  "warning":      $warning,
+  "danger":       $danger,
+  "gray":         $gray,
+  "gray-dark":    $gray-dark,
+  "gray-light":   $gray-light,
+  "gray-lighter": $gray-lighter,
+) !default;
