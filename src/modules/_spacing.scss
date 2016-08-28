@@ -13,9 +13,9 @@
 
   // horizontal spacing
 
-  .#{$name}l { #{$value}-left: $gutter }
-  .#{$name}r { #{$value}-right: $gutter }
-  .#{$name}x { #{$value}-left: $gutter; #{$value}-right: $gutter }
+  .#{$name}l { #{$value}-left: $sm }
+  .#{$name}r { #{$value}-right: $sm }
+  .#{$name}x { #{$value}-left: $sm; #{$value}-right: $sm }
 
   @each $gutter-name, $gutter-value in $scale {
     .#{$name}l-#{$gutter-name} { #{$value}-left: $gutter-value }

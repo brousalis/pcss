@@ -1,9 +1,10 @@
 // extras
 
 * { box-sizing: border-box; outline: none }
+*:focus { outline: none !important }
 
 html {
-  color: $gray-dark;
+  color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
@@ -12,9 +13,5 @@ img { max-width: 100% }
 
 a {
   background: transparent;
-  color: $brand;
-  outline: 0;
   text-decoration: none;
-
-  &:active, &:hover { outline: 0 }
 }

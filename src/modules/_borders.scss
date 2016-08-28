@@ -3,7 +3,7 @@
 $border-width: 1px !default;
 $border-style: solid !default;
 
-.b   { border-style: $border-style; border-width: $border-width }
+.b-a { border-style: $border-style; border-width: $border-width }
 .b-t { border-top-style: $border-style; border-top-width: $border-width }
 .b-r { border-right-style: $border-style; border-right-width: $border-width }
 .b-b { border-bottom-style: $border-style; border-bottom-width: $border-width }
